@@ -28,16 +28,6 @@ function Login({ onLogin }) {
 
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
-  const [captchaA] = useState(
-  Math.floor(Math.random() * 10) + 1
-);
-
-const [captchaB] = useState(
-  Math.floor(Math.random() * 10) + 1
-);
-
-const [captchaRespuesta, setCaptchaRespuesta] =
-  useState("");
 
   // LOGIN
   const handleLogin = async (e) => {
@@ -67,7 +57,9 @@ const [captchaRespuesta, setCaptchaRespuesta] =
         "http://localhost:3001/login",
         {
           usuario,
-          password
+          password,
+          captcha: num1 + num2,
+          resultadoCaptcha: captcha
         }
       );
 
