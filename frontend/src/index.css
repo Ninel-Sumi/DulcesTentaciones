@@ -1,0 +1,167 @@
+:root {
+  --text: #6b6375;
+  --text-h: #08060d;
+  --bg: #fff;
+  --border: #e5e4e7;
+  --code-bg: #f4f3ec;
+
+  --accent: #aa3bff;
+  --accent-bg: rgba(170, 59, 255, 0.1);
+  --accent-border: rgba(170, 59, 255, 0.5);
+
+  --shadow:
+    rgba(0, 0, 0, 0.1) 0 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  font: 16px/145% var(--sans);
+  color: var(--text);
+  background: var(--bg);
+}
+
+/* =========================
+   PAQUETES (NETFLIX STYLE)
+========================= */
+
+.netflix-container {
+  padding: 20px;
+}
+
+.netflix-row {
+  display: flex;
+  overflow-x: auto;
+  gap: 12px;
+  padding: 10px;
+  scroll-behavior: smooth;
+}
+
+.netflix-card {
+  min-width: 200px;
+  background: linear-gradient(145deg, #ffe4ec, #ffd6e8);
+  border: 1px solid rgba(255, 182, 193, 0.6);
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  flex-shrink: 0;
+  box-shadow: 0 6px 15px rgba(255, 105, 180, 0.15);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.netflix-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(255, 105, 180, 0.25);
+}
+
+.netflix-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+
+.netflix-info {
+  padding: 8px;
+  text-align: center;
+  color: #6a1b4d;
+}
+
+.netflix-info p {
+  margin-top: 4px;
+  font-size: 13px;
+  color: #b03a6b;
+}
+
+/* =========================
+   OVERLAY REFERENCIAS
+========================= */
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 999;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* =========================
+   PANEL LATERAL REFERENCIAS
+========================= */
+
+.referencias-modal {
+  width: 280px;   /* 🔥 más compacto */
+  height: 100vh;
+  background: var(--bg);
+  padding: 10px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  animation: slide 0.25s ease;
+  border-left: 1px solid var(--border);
+}
+
+/* animación */
+@keyframes slide {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* scroll interno */
+.referencias-scroll {
+  height: calc(100% - 40px);
+  overflow-y: auto;
+  padding-right: 5px;
+}
+
+/* =========================
+   REFERENCIAS (ULTRA COMPACTAS)
+========================= */
+
+.ref-item {
+  display: flex;
+  gap: 6px;
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 6px;
+  margin-bottom: 6px;
+  transition: transform 0.2s ease;
+}
+
+.ref-item:hover {
+  transform: scale(1.02);
+}
+
+/* imagen más pequeña */
+.ref-img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* texto compacto real */
+.ref-text h5 {
+  margin: 0;
+  font-size: 12px;
+  color: var(--text-h);
+}
+
+.ref-text p {
+  margin: 2px 0;
+  font-size: 10px;
+  color: var(--text);
+}
+
+/* cerrar */
+.cerrar-modal {
+  font-size: 20px;
+  cursor: pointer;
+  float: right;
+  color: var(--text-h);
+}
