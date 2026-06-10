@@ -847,6 +847,7 @@ app.get("/estadisticas-productos", (req, res) => {
 });
 
 // 🔥 SERVIDOR
-app.listen(3001, () => {
-  console.log("Servidor en http://localhost:3001");
+const PORT = process.env.PORT || 3001;
+app.listen(PORT, () => {
+  console.log("Servidor en puerto " + PORT);
 });
