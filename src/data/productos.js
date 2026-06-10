@@ -61,7 +61,7 @@ export const productos = [
     nombre: "Cheesecake",
     precio: 25,
     descripcion: "Cheesecake cremoso con base de galleta",
-    imagen: "/imagenes/cheescake.webp"
+    imagen: "/imagenes/cheesecake.webp"
   },
   {
     id: 10,

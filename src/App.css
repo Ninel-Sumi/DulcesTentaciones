@@ -178,7 +178,7 @@ body {
     padding: 40px 0;
     background: 
     linear-gradient(rgba(255, 192, 203, 0.7), rgba(255, 192, 203, 0.7)),
-    url('./imagenes/Imagen_de_WhatsApp_2025-09-29_a_las_21.58.25_35a63155-removebg-preview.png') no-repeat center center / cover;
+    url('/imagenes/Imagen_de_WhatsApp_2025-09-29_a_las_21.58.25_35a63155-removebg-preview.png') no-repeat center center / cover;
 }
 #inicio h1 {
     text-align: center;
@@ -199,7 +199,7 @@ p {
     padding: 40px 0; 
     background: 
     linear-gradient(rgba(255, 192, 203, 0.7), rgba(255, 192, 203, 0.7)),
-    url('./imagenes/Imagen_de_WhatsApp_2025-09-29_a_las_21.58.25_35a63155-removebg-preview.png') no-repeat center center / cover;
+    url('/imagenes/Imagen_de_WhatsApp_2025-09-29_a_las_21.58.25_35a63155-removebg-preview.png') no-repeat center center / cover;
 }
 .productos {
     width: 100%;
@@ -239,7 +239,7 @@ p {
     width: 100%;    padding: 40px 0;
     background: 
     linear-gradient(rgba(255, 192, 203, 0.7), rgba(255, 192, 203, 0.7)),
-    url('./imagenes/Imagen_de_WhatsApp_2025-09-29_a_las_21.58.25_35a63155-removebg-preview.png') no-repeat center center / cover;
+    url('/imagenes/Imagen_de_WhatsApp_2025-09-29_a_las_21.58.25_35a63155-removebg-preview.png') no-repeat center center / cover;
 }
 #paquetes h1 {
     text-align: center;
@@ -293,7 +293,7 @@ p {
     padding: 40px 0;
     background:
     linear-gradient(rgba(255, 192, 203, 0.7), rgba(255, 192, 203, 0.7)),
-    url('./imagenes/Imagen_de_WhatsApp_2025-09-29_a_las_21.58.25_35a63155-removebg-preview.png') no-repeat center center / cover;
+    url('/imagenes/Imagen_de_WhatsApp_2025-09-29_a_las_21.58.25_35a63155-removebg-preview.png') no-repeat center center / cover;
 }
 #referencias h1 {
     text-align: center;
